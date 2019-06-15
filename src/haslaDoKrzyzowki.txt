@@ -1,0 +1,14 @@
+jawa: czeski motocykl
+stolik: barowy mebel
+kawa: arabika albo nesca
+telewizor: okno na œwiat
+renault: Clio lub Twingo
+statua:	... Wolnoœci w Nowym Jorku
+c: witamina ..., kwas askorbinowy
+spó³ka: akcyjna lub komandytowa
+bazyliszek: bajkowy potwór, stró¿ skarbów
+chytrus: chytra sztuka
+krakowiak: jeden z polskich tañców ludowych
+pogo: anty-taniec punków
+nuda: bezczynnoœæ, monotonia
+

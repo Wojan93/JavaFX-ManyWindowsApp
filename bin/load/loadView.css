@@ -1,0 +1,47 @@
+.button:pressed {
+	-fx-border-radius: 20.0%;
+}
+.button:hover {
+	-fx-blend-mode:lighten;
+	-fx-text-fill:yellow;
+}
+.TitleCSS {
+	-fx-text-fill:white;
+
+	-fx-font-weight: bold;
+}
+.AnchorCSS{
+	-fx-background-color:#82b74b;
+	-fx-border-radius: 5.0%;
+	-fx-border-color: black;
+}
+.ButtonCSS{
+	-fx-background-color: #50394c;
+	-fx-color:Black;
+	-fx-font-size: 12.0px;
+	-fx-border-radius: 5.0%;
+	-fx-font-family: Times, serif;
+	-fx-border-color: #f1e3dd;
+	-fx-border-width: 1.5px;
+}
+.BarCSS {
+	-fx-background-color: #ff6f69;
+	-fx-font-size: 12.0px;
+	-fx-border-radius: 5.0%;
+	-fx-font-family: Times, serif;
+
+}
+.MenuCSS {
+	-fx-background-color: #622569;
+	-fx-color:Black;
+	-fx-font-size: 24.0px;
+	-fx-border-radius: 5.0%;
+	-fx-font-family: Times, serif;
+	-fx-border-color: #f1e3dd;
+	-fx-border-width: 1.5px;
+}
+.LabelCSS {
+	-fx-text-fill:white;
+	-fx-font-size: 12.0px;
+	-fx-font-weight: bold;
+}

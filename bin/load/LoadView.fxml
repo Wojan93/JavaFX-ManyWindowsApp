@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="load.LoadViewController">
+   <top>
+      <MenuBar styleClass="MenuCSS" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Wczytaj Plik">
+            <items>
+              <MenuItem fx:id="wyswietl" mnemonicParsing="false" onAction="#wyswietlTabela" text="Wczytaj i wyświetl" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Zapisz">
+            <items>
+              <MenuItem fx:id="zapisz" mnemonicParsing="false" onAction="#zapiszAction" text="Zapisz do pliku" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <TableView fx:id="tabela" editable="true" onSort="#wyswietlTabela" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="haslo" prefWidth="150.0" text="HASLO" />
+          <TableColumn fx:id="definicja" minWidth="0.0" prefWidth="449.0" text="DEFINICJA" />
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="160.0" prefWidth="600.0" styleClass="BarCSS" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane id="BarCSS" minHeight="0.0" minWidth="0.0" prefHeight="50.0" prefWidth="598.0">
+               <children>
+                  <Label layoutX="41.0" layoutY="31.0" minWidth="35.0" prefHeight="17.0" prefWidth="56.0" text="Hasło" />
+                  <TextField fx:id="hasloInput" layoutX="97.0" layoutY="27.0" />
+                  <Label layoutX="307.0" layoutY="31.0" minWidth="14.0" prefHeight="17.0" prefWidth="95.0" text="Definicja" />
+                  <TextField fx:id="definicjaInput" layoutX="402.0" layoutY="27.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane id="BarCSS" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ButtonBar layoutX="-1.0" layoutY="1.0" prefHeight="95.0" prefWidth="600.0">
+                    <buttons>
+                        <Button fx:id="add" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addButtonClicked" prefHeight="25.0" styleClass="ButtonCSS" text="Dodaj hasło" />
+                      <Button fx:id="del" mnemonicParsing="false" onAction="#delButtonClicked" styleClass="ButtonCSS" text="Usuń hasło" />
+                        <Button fx:id="powrot" mnemonicParsing="false" onAction="#powrotButtonClicked" styleClass="ButtonCSS" text="Powróć" />
+                    </buttons>
+                  </ButtonBar>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </bottom>
+</BorderPane>
